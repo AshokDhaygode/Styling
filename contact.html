@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+ 
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p></p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+
+        <div class="input-box message-box">
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" formControlName="message" class="form-control" placeholder="Enter your message"></textarea>
+            <div ngIf="signupForm.get('message')!.invalid && (signupForm.get('message')!.dirty || signupForm.get('message')!.touched)">
+              
+            </div>
+          </div>
+             
+
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

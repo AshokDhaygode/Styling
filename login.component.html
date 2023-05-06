@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.component.css"> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div style="align-self: center;">
+    <div class="container">
+        <mat-card>
+        <mat-card-content>
+            <div class="header">
+                <div class="user-icon">
+                <ion-icon name="person-outline"></ion-icon></div>
+                <div class="h"><h1>LOGIN</h1></div>
+            </div>
+            <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+                <div class="email-input">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <div class="e1"><mat-label>Email</mat-label></div>
+                      <ion-icon name="mail-outline" ></ion-icon>
+                      <input required formControlName="email">
+                      <!-- <mat-error *ngIF="loginForm.get('email').errors?.['required']"> 
+                        Required email address
+                      </mat-error> -->
+                    </mat-form-field>
+                </div>
+                <div>
+                <div class="password-input">
+                    <mat-form-field class="full-width" appearence="outline">
+                        <div class="p1"><label>Password</label></div>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input required formControlName="password" type="password">
+                        <!-- <button mat-icon-button matSuffix (click)="['hide = !hide']"
+                          [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="['hide']">
+                          <mat-icon>{{ ['hide']? 'visibility_off' : 'visibility' }}</mat-icon>
+                        </button> -->
+                        <!-- <mat-error *ngIF="loginForm.get('password').errors?.required">
+                            Required Password
+                        </mat-error> -->
+                    <!-- </mat-form-field> -->
+
+                    <button class="aLink">Forgot Password?</button>
+                  
+                    <div class="check">
+                        <input type="checkbox" ng-model="rememberMe"> Remember Me</input> 
+                    </div> 
+                </div>
+            </div>
+                <div class="btn">
+               <button class="b1">
+                    Login
+                </button>
+                <button class="b2">
+                    Sign Up
+                </button>  
+            </div>  
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+</div>
+</body>
+</html>

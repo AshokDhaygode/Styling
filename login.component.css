@@ -1,0 +1,136 @@
+mat-card {
+    max-width: 500px;
+    margin: auto;
+    text-align: centre;
+   /* max-height: 600px;*/
+    
+    
+}
+
+body{
+    display:flex;
+    background-color:rgb(34, 28, 28);
+    min-height: 100vh;
+    min-width: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+body
+{
+    background-image: url("bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container
+{ 
+    display: flex;
+    /* background-color: rgb(204, 130, 154); */
+    background-color: rgb(241, 237, 236);
+    /* background-color: white; */
+    max-height:500px;
+    max-width:500px;
+    background-clip: padding-box;
+    padding-bottom: 10px;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgb(110, 9, 153);
+   /*  border-color:rgb(59, 17, 43); */
+    height: fit-content;
+    
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    padding:2px;
+    margin-bottom: -20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
+}
+
+.full-width {
+    width: 80%;
+    text-align: center;
+}
+
+.forgot-password {
+    text-align: right;
+    padding-left: 10px;
+    margin:left;
+}
+
+.email-input {
+    padding-top: 10px;
+    text-align:center;
+    margin: 0 25px 10px 0;
+}
+
+.password-input
+{
+    text-align: center;
+    margin-right: 25px;
+}
+
+.btn {
+    text-align: center;
+    margin: 5px 30px 0 20px;
+}
+.b1
+{
+    background-color: green;
+    padding:10px;
+
+}
+.b2
+{
+    padding:10px;
+}
+.aLink {
+    /* float: none;  */
+   text-decoration: solid;
+   display: inline-flex;
+   margin: 10px 300px 0 0;
+}
+
+.check
+{
+    display:inline-flex;
+    margin-left: 350px;
+    
+}
+
+.e1
+{
+   text-align: center;
+   font-weight:bold;
+   padding-block: 10px;
+   margin-left: -120px;
+}
+.p1
+{
+   text-align: center;
+   font-weight:bold;
+   padding-block: 10px;
+   margin-left: -100px;
+}
+.user-icon
+{
+    background: rgb(209, 158, 140);
+    border-radius:50%; 
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: -100px;
+}
+.user-icon
+{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
